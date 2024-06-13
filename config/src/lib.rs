@@ -97,7 +97,7 @@ impl Config {
             unixsocket: None,
             unixsocketperm: 0o700,
             rename_commands: HashMap::new(),
-            requirepass: None,
+            requirepass: Some("redispw".to_string()),
             tcp_backlog: 511,
             syslog_enabled: false,
             syslog_ident: "rsedis".to_owned(),
